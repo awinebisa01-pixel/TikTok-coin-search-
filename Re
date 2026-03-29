@@ -1,0 +1,24 @@
+.transfer {
+  background: white;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.transfer input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.send {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
