@@ -1,0 +1,33 @@
+let balance = 5000;
+let selectedAmount = 3500;
+
+function selectAmount(amount) {
+  selectedAmount = amount;
+  alert("Selected " + amount + " coins");
+}
+
+function buyCoins() {
+  balance += selectedAmount;
+  document.getElementById("balance").innerText = balance + " coins";
+  alert("Coins added!");
+}
+
+function sendCoins() {
+  let user = document.getElementById("username").value;
+  let amount = parseInt(document.getElementById("amount").value);
+
+  if (!user || !amount) {
+    alert("Fill all fields");
+    return;
+  }
+
+  if (amount > balance) {
+    alert("Not enough coins");
+    return;
+  }
+
+  balance -= amount;
+  document.getElementById("balance").innerText = balance + " coins";
+
+  alert("Sent " + amount + " coins to " + user);
+}
