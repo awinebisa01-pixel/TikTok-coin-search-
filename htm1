@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get Coins</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h2>Get Coins</h2>
+
+  <div class="card">
+    <h3>Recharge</h3>
+    <p class="balance" id="balance">5000 coins</p>
+  </div>
+
+  <p class="save">Save around 25% with a lower third-party service fee.</p>
+
+  <div class="grid">
+    <div class="box" onclick="selectAmount(30)">30<br><small>$0.31</small></div>
+    <div class="box" onclick="selectAmount(350)">350<br><small>$3.65</small></div>
+    <div class="box" onclick="selectAmount(700)">700<br><small>$7.25</small></div>
+    <div class="box" onclick="selectAmount(1400)">1400<br><small>$14.49</small></div>
+    <div class="box active" onclick="selectAmount(3500)">3500<br><small>$36.2</small></div>
+    <div class="box" onclick="selectAmount(0)">Custom</div>
+  </div>
+
+  <button class="buy" onclick="buyCoins()">Buy Now</button>
+
+  <!-- 🔥 TRANSFER SECTION -->
+  <div class="transfer">
+    <h3>Send Coins</h3>
+    <input type="text" id="username" placeholder="Enter username">
+    <input type="number" id="amount" placeholder="Enter coins">
+    <button class="send" onclick="sendCoins()">Send</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
